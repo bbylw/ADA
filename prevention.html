@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>糖尿病预防策略 — ADA 2026 糖尿病诊疗指南</title>
+<meta name="description" content="基于ADA 2026指南的糖尿病预防策略：生活方式干预、药物预防与高危人群筛查建议。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{sage:{50:'#f4f7f4',100:'#e6ece6',200:'#cfdacf',300:'#a8bfa8',400:'#7a9d7a',500:'#5a7f5a',600:'#476647',700:'#3a5239',800:'#31432f',900:'#283728',950:'#131e13'},coral:{50:'#fef5f2',100:'#fde8e1',200:'#fcd5c8',300:'#f9b8a2',400:'#f4906d',500:'#ec6f45',600:'#d95428',700:'#b8441f',800:'#983b1e',900:'#7e351f',950:'#44180b'}},fontFamily:{serif:['"Noto Serif SC"','Georgia','serif'],sans:['"Noto Sans SC"','system-ui','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',system-ui,sans-serif;background:#f8faf8}
+.font-serif{font-family:'Noto Serif SC',Georgia,serif}
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.fade-up{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="text-sage-900 antialiased">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-sage-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <svg class="w-8 h-8 text-sage-600" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28S4 18 4 11a6 6 0 0 1 12 0 6 6 0 0 1 12 0c0 7-12 17-12 17Z"/></svg>
+        <div class="leading-tight">
+          <span class="font-bold text-sage-800 text-base tracking-tight">ADA 2026</span>
+          <span class="block text-[11px] text-sage-500 -mt-0.5">糖尿病诊疗指南</span>
+        </div>
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1 text-sm">
+        <a href="index.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition">首页</a>
+        <a href="overview.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition">概述与诊断</a>
+        <a href="prevention.html" class="px-3 py-1.5 rounded-lg text-sage-700 font-medium bg-sage-50 transition">预防</a>
+        <a href="treatment.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition">综合管理</a>
+        <a href="heart-kidney.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition">心肾保护</a>
+        <a href="complications.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition">并发症</a>
+        <a href="wellbeing.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition">身心健康</a>
+      </nav>
+      <!-- Mobile Hamburger -->
+      <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="md:hidden p-2 rounded-lg text-sage-600 hover:bg-sage-50 transition" aria-label="菜单">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mob-menu" class="hidden md:hidden border-t border-sage-100 bg-white">
+    <div class="grid grid-cols-2 gap-1 p-3">
+      <a href="index.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-600 hover:bg-sage-50 transition">首页</a>
+      <a href="overview.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-600 hover:bg-sage-50 transition">概述与诊断</a>
+      <a href="prevention.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-700 font-medium bg-sage-50 transition">预防</a>
+      <a href="treatment.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-600 hover:bg-sage-50 transition">综合管理</a>
+      <a href="heart-kidney.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-600 hover:bg-sage-50 transition">心肾保护</a>
+      <a href="complications.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-600 hover:bg-sage-50 transition">并发症</a>
+      <a href="wellbeing.html" class="px-3 py-2.5 rounded-lg text-sm text-sage-600 hover:bg-sage-50 transition">身心健康</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="bg-gradient-to-br from-sage-100 via-sage-50 to-white py-10 sm:py-14">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="text-sm text-sage-500 mb-4" aria-label="面包屑">
+      <a href="index.html" class="hover:text-sage-700 transition">首页</a>
+      <span class="mx-1.5">›</span>
+      <span class="text-sage-700 font-medium">预防策略</span>
+    </nav>
+    <h1 class="font-serif text-3xl sm:text-4xl font-bold text-sage-900 mb-3">糖尿病预防策略</h1>
+    <p class="text-sage-600 text-base sm:text-lg leading-relaxed max-w-2xl">基于ADA 2026指南，通过生活方式干预、药物预防与科学筛查，有效降低糖尿病发病风险——预防始终是最佳的治疗。</p>
+  </div>
+</section>
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+  <!-- Section 1: 一级预防 -->
+  <section class="fade-up mb-10">
+    <div class="flex items-center gap-3 mb-5">
+      <div class="w-10 h-10 rounded-xl bg-sage-100 flex items-center justify-center shrink-0">
+        <span class="font-serif font-bold text-sage-700 text-lg">一</span>
+      </div>
+      <h2 class="font-serif text-xl sm:text-2xl font-bold text-sage-900">一级预防——生活方式干预</h2>
+    </div>
+    <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+      <p class="text-sage-600 text-sm mb-5 leading-relaxed">对于糖尿病前期人群，ADA 2026指南强调以下四大核心生活方式干预措施：</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- 体重管理 -->
+        <div class="bg-sage-50 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-sage-200/60 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-9 9h18a9 9 0 0 0-9-9Z"/><rect x="5" y="12" width="14" height="8" rx="2"/><path d="M9 12v2m6-2v2"/><circle cx="12" cy="7" r="1.5"/><path d="M8.5 8.5 12 7m0 0 3.5 1.5"/></svg>
+            </div>
+            <h3 class="font-bold text-sage-800 text-base">体重管理</h3>
+          </div>
+          <p class="text-sage-600 text-sm leading-relaxed">目标减轻初始体重 <strong class="text-sage-800">5%–7%</strong>，参加糖尿病预防计划（DPP），获得持续的饮食和运动指导。</p>
+        </div>
+        <!-- 饮食模式 -->
+        <div class="bg-sage-50 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-sage-200/60 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z"/><path d="M6 1v3m4-3v3m4-3v3"/></svg>
+            </div>
+            <h3 class="font-bold text-sage-800 text-base">饮食模式</h3>
+          </div>
+          <p class="text-sage-600 text-sm leading-relaxed">推荐<strong class="text-sage-800">地中海饮食</strong>（橄榄油、坚果、鱼类、全谷物、蔬果）和<strong class="text-sage-800">低碳水化合物饮食</strong>，有最强证据基础。</p>
+        </div>
+        <!-- 规律运动 -->
+        <div class="bg-sage-50 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-sage-200/60 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>
+            </div>
+            <h3 class="font-bold text-sage-800 text-base">规律运动</h3>
+          </div>
+          <p class="text-sage-600 text-sm leading-relaxed">每周≥<strong class="text-sage-800">150分钟</strong>中等强度有氧运动（快走）或<strong class="text-sage-800">75分钟</strong>高强度运动，分散在每周多天进行。</p>
+        </div>
+        <!-- 戒烟 -->
+        <div class="bg-sage-50 rounded-xl p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-sage-200/60 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="15" width="18" height="4" rx="1"/><path d="M22 15v4"/><path d="M7 3c0 2.5 2 3 2 5m4-5c0 2.5 2 3 2 5"/><line x1="2" y1="2" x2="22" y2="22" stroke-width="2"/></svg>
+            </div>
+            <h3 class="font-bold text-sage-800 text-base">戒烟</h3>
+          </div>
+          <p class="text-sage-600 text-sm leading-relaxed">2026年<strong class="text-coral-600">新增</strong>电子烟/雾化器使用的评估和戒除建议，所有烟草形式均应停止使用。</p>
+        </div>
+      </div>
+      <!-- 技术辅助 Note -->
+      <div class="mt-5 flex items-start gap-3 bg-sage-50/60 border border-sage-100 rounded-xl p-4">
+        <svg class="w-5 h-5 text-sage-500 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+        <p class="text-sage-600 text-sm leading-relaxed"><strong class="text-sage-700">技术辅助</strong> — 经认证的DPP可通过智能手机、网络应用和远程医疗方式提供，让预防计划更加便捷可及。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: 药物预防 -->
+  <section class="fade-up mb-10">
+    <div class="flex items-center gap-3 mb-5">
+      <div class="w-10 h-10 rounded-xl bg-sage-100 flex items-center justify-center shrink-0">
+        <span class="font-serif font-bold text-sage-700 text-lg">二</span>
+      </div>
+      <h2 class="font-serif text-xl sm:text-2xl font-bold text-sage-900">药物预防</h2>
+    </div>
+    <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+      <div class="flex items-start gap-3 mb-5">
+        <svg class="w-5 h-5 text-sage-500 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+        <p class="text-sage-700 text-sm leading-relaxed"><strong class="text-sage-800">二甲双胍</strong>可考虑用于 BMI≥35、年龄&lt;60岁或有妊娠期糖尿病史的高危糖尿病前期个体，以延缓或预防2型糖尿病的发生。</p>
+      </div>
+      <!-- 2026 New -->
+      <div class="bg-coral-50 border border-coral-200/60 rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-coral-100 text-coral-700 text-xs font-semibold">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            2026 新增
+          </span>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2.5 text-sm text-sage-700 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-coral-400 mt-2 shrink-0"></span>
+            考虑二甲双胍预防接受 <strong class="text-sage-800">PI3Kα抑制剂</strong>（alpelisib、inavolisib）治疗者的高血糖
+          </li>
+          <li class="flex items-start gap-2.5 text-sm text-sage-700 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-coral-400 mt-2 shrink-0"></span>
+            考虑二甲双胍预防接受<strong class="text-sage-800">大剂量糖皮质激素</strong>治疗者的高血糖
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: 高危人群筛查建议 -->
+  <section class="fade-up mb-10">
+    <div class="flex items-center gap-3 mb-5">
+      <div class="w-10 h-10 rounded-xl bg-sage-100 flex items-center justify-center shrink-0">
+        <span class="font-serif font-bold text-sage-700 text-lg">三</span>
+      </div>
+      <h2 class="font-serif text-xl sm:text-2xl font-bold text-sage-900">高危人群筛查建议</h2>
+    </div>
+    <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+      <p class="text-sage-600 text-sm mb-5 leading-relaxed">ADA 2026建议以下人群应定期进行糖尿病筛查：</p>
+      <ul class="space-y-3.5">
+        <li class="flex items-start gap-3 text-sm text-sage-700 leading-relaxed">
+          <span class="w-2 h-2 rounded-full bg-sage-400 mt-1.5 shrink-0"></span>
+          <span>超重/肥胖（BMI≥25；亚裔≥23）且有<strong class="text-sage-800">≥1个危险因素</strong>的成人</span>
+        </li>
+        <li class="flex items-start gap-3 text-sm text-sage-700 leading-relaxed">
+          <span class="w-2 h-2 rounded-full bg-sage-400 mt-1.5 shrink-0"></span>
+          <span>所有<strong class="text-sage-800">≥35岁</strong>成人</span>
+        </li>
+        <li class="flex items-start gap-3 text-sm text-sage-700 leading-relaxed">
+          <span class="w-2 h-2 rounded-full bg-sage-400 mt-1.5 shrink-0"></span>
+          <span>有<strong class="text-sage-800">妊娠期糖尿病史</strong>的女性：产后4–12周及此后每1–3年终身筛查</span>
+        </li>
+        <li class="flex items-start gap-3 text-sm text-sage-700 leading-relaxed">
+          <span class="w-2 h-2 rounded-full bg-sage-400 mt-1.5 shrink-0"></span>
+          <span>使用<strong class="text-sage-800">抗精神病药物、他汀类药物、噻嗪类利尿剂</strong>等的患者</span>
+        </li>
+        <li class="flex items-start gap-3 text-sm text-sage-700 leading-relaxed">
+          <span class="w-2 h-2 rounded-full bg-sage-400 mt-1.5 shrink-0"></span>
+          <span><strong class="text-sage-800">HIV感染者</strong></span>
+        </li>
+        <li class="flex items-start gap-3 text-sm text-sage-700 leading-relaxed">
+          <span class="w-2 h-2 rounded-full bg-sage-400 mt-1.5 shrink-0"></span>
+          <span>儿童/青少年：青春期后或10岁后，<strong class="text-sage-800">BMI≥85百分位</strong>且有≥1个危险因素</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <nav class="fade-up flex items-center justify-between gap-4 pt-4">
+    <a href="overview.html" class="group flex items-center gap-2 px-5 py-3 rounded-xl border border-sage-200 bg-white hover:border-sage-300 hover:shadow-sm transition text-sm text-sage-600 hover:text-sage-800">
+      <svg class="w-4 h-4 transition-transform group-hover:-translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      概述与诊断
+    </a>
+    <a href="treatment.html" class="group flex items-center gap-2 px-5 py-3 rounded-xl border border-sage-200 bg-white hover:border-sage-300 hover:shadow-sm transition text-sm text-sage-600 hover:text-sage-800">
+      综合管理
+      <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </nav>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-sage-950 text-sage-300 mt-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="w-7 h-7 text-sage-400" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 28S4 18 4 11a6 6 0 0 1 12 0 6 6 0 0 1 12 0c0 7-12 17-12 17Z"/></svg>
+          <div class="leading-tight">
+            <span class="font-bold text-white text-base tracking-tight">ADA 2026</span>
+            <span class="block text-[11px] text-sage-500 -mt-0.5">糖尿病诊疗指南</span>
+          </div>
+        </div>
+        <p class="text-sm text-sage-500 leading-relaxed">基于循证医学，仅供健康科普与教育目的，不构成个人医疗建议。</p>
+      </div>
+      <!-- Page Links -->
+      <div>
+        <h4 class="text-sm font-semibold text-sage-200 mb-4">指南章节</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">首页</a></li>
+          <li><a href="overview.html" class="hover:text-white transition">概述与诊断</a></li>
+          <li><a href="prevention.html" class="text-white font-medium">预防</a></li>
+          <li><a href="treatment.html" class="hover:text-white transition">综合管理</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-sage-200 mb-4">更多内容</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="heart-kidney.html" class="hover:text-white transition">心肾保护</a></li>
+          <li><a href="complications.html" class="hover:text-white transition">并发症</a></li>
+          <li><a href="wellbeing.html" class="hover:text-white transition">身心健康</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-sage-800 mt-10 pt-6 text-center text-xs text-sage-600">
+      <p>© 2026 ADA 糖尿病诊疗指南科普站 · 内容基于 ADA Standards of Care in Diabetes—2026</p>
+    </div>
+  </div>
+</footer>
+
+<!-- IntersectionObserver for fade-up -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
+});
+</script>
+</body>
+</html>

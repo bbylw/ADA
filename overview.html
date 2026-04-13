@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概述与诊断 · ADA 2026 糖尿病诊疗指南</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{sage:{50:'#f4f7f4',100:'#e6ece6',200:'#cfdacf',300:'#a8bfa8',400:'#7a9d7a',500:'#5a7f5a',600:'#476647',700:'#3a5239',800:'#31432f',900:'#283728',950:'#131e13'},coral:{50:'#fef5f2',100:'#fde8e1',200:'#fcd5c8',300:'#f9b8a2',400:'#f4906d',500:'#ec6f45',600:'#d95428',700:'#b8441f',800:'#983b1e',900:'#7e351f',950:'#44180b'}},fontFamily:{serif:['"Noto Serif SC"','Georgia','serif'],sans:['"Noto Sans SC"','system-ui','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}body{font-family:'Noto Sans SC',system-ui,sans-serif;background:#f8faf8}.font-serif{font-family:'Noto Serif SC',Georgia,serif}.fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.fade-up.visible{opacity:1;transform:translateY(0)}.data-table{width:100%;border-collapse:collapse}.data-table th{background:#f4f7f4;font-weight:600;text-align:left;padding:.75rem 1rem;border-bottom:2px solid #cfdacf;font-size:.875rem}.data-table td{padding:.75rem 1rem;border-bottom:1px solid #e6ece6;font-size:.875rem;line-height:1.6}.data-table tr:last-child td{border-bottom:none}@media(prefers-reduced-motion:reduce){.fade-up{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="antialiased">
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-sage-100/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-14 sm:h-16">
+      <a href="index.html" class="flex items-center gap-2.5"><div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-sage-600 flex items-center justify-center shadow-sm"><svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><div><div class="font-serif text-sm sm:text-base font-bold text-sage-900 leading-none">ADA 2026</div><div class="text-[10px] sm:text-[11px] text-sage-500 tracking-wide">糖尿病诊疗指南</div></div></a>
+      <nav class="hidden lg:flex items-center gap-1 text-[13px]">
+        <a href="index.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition-colors">首页</a>
+        <a href="overview.html" class="px-3 py-1.5 rounded-lg text-sage-700 font-medium bg-sage-50">概述与诊断</a>
+        <a href="prevention.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition-colors">预防</a>
+        <a href="treatment.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition-colors">综合管理</a>
+        <a href="heart-kidney.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition-colors">心肾保护</a>
+        <a href="complications.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition-colors">并发症</a>
+        <a href="wellbeing.html" class="px-3 py-1.5 rounded-lg text-sage-600 hover:text-sage-800 hover:bg-sage-50 transition-colors">身心健康</a>
+      </nav>
+      <button onclick="document.getElementById('mob-menu').classList.toggle('hidden')" class="lg:hidden p-2 -mr-2 text-sage-600" aria-label="菜单"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg></button>
+    </div>
+    <div id="mob-menu" class="hidden lg:hidden pb-4 border-t border-sage-100 mt-1 pt-3"><div class="grid grid-cols-2 gap-2 text-sm"><a href="index.html" class="px-3 py-2.5 rounded-xl bg-sage-50 text-sage-700 font-medium">首页</a><a href="overview.html" class="px-3 py-2.5 rounded-xl bg-sage-100 text-sage-800 font-medium">概述与诊断</a><a href="prevention.html" class="px-3 py-2.5 rounded-xl bg-sage-50 text-sage-700 font-medium">预防策略</a><a href="treatment.html" class="px-3 py-2.5 rounded-xl bg-sage-50 text-sage-700 font-medium">综合管理</a><a href="heart-kidney.html" class="px-3 py-2.5 rounded-xl bg-sage-50 text-sage-700 font-medium">心肾保护</a><a href="complications.html" class="px-3 py-2.5 rounded-xl bg-sage-50 text-sage-700 font-medium">并发症管理</a><a href="wellbeing.html" class="px-3 py-2.5 rounded-xl bg-sage-50 text-sage-700 font-medium">身心健康</a></div></div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="bg-gradient-to-br from-sage-50 via-white to-sage-50/50 border-b border-sage-100/40">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="flex items-center gap-2 text-xs text-sage-400 mb-4">
+      <a href="index.html" class="hover:text-sage-600 transition-colors">首页</a>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="text-sage-600 font-medium">概述与诊断</span>
+    </div>
+    <h1 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-black text-sage-950 tracking-tight">糖尿病概述与诊断</h1>
+    <p class="text-sm sm:text-base text-sage-500 mt-3 max-w-xl">了解糖尿病的本质、分型、诊断标准，以及 ADA 2026 年指南的核心更新内容。</p>
+  </div>
+</div>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+  <!-- Section 一 -->
+  <section class="mb-14 fade-up">
+    <div class="flex items-center gap-3 mb-6">
+      <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-sage-100 text-sage-700 font-serif font-bold text-lg">一</span>
+      <h2 class="font-serif text-xl sm:text-2xl font-bold text-sage-950">糖尿病概述</h2>
+    </div>
+
+    <div class="space-y-4">
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-3">什么是糖尿病</h3>
+        <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed">糖尿病是一组以<strong class="text-sage-800">慢性高血糖</strong>为特征的代谢性疾病。其核心病理机制是胰岛素分泌缺陷和/或胰岛素作用障碍，导致碳水化合物、脂肪和蛋白质代谢紊乱。长期未控制的高血糖可引起全身多个器官系统的损伤，包括眼睛、肾脏、神经、心脏和血管。</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-5">糖尿病的分型</h3>
+        <div class="space-y-4">
+          <div class="border-l-[3px] border-sage-400 pl-4">
+            <div class="font-semibold text-sage-800 text-sm mb-1">1型糖尿病（T1D）</div>
+            <p class="text-sm text-slate-600 leading-relaxed mb-3">由自身免疫介导的胰岛β细胞破坏所致，导致<strong>绝对胰岛素缺乏</strong>。可发生于任何年龄，但多见于儿童和青少年。</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <div class="bg-sage-50 rounded-xl p-3"><div class="font-bold text-sage-700 text-xs mb-0.5">阶段 1</div><span class="text-xs text-slate-500">≥2种胰岛自身抗体，血糖正常</span></div>
+              <div class="bg-sage-50 rounded-xl p-3"><div class="font-bold text-sage-700 text-xs mb-0.5">阶段 2</div><span class="text-xs text-slate-500">胰岛自身抗体 + 血糖异常</span></div>
+              <div class="bg-sage-50 rounded-xl p-3"><div class="font-bold text-sage-700 text-xs mb-0.5">阶段 3</div><span class="text-xs text-slate-500">临床显性糖尿病，出现高血糖症状</span></div>
+            </div>
+          </div>
+          <div class="border-l-[3px] border-coral-300 pl-4">
+            <div class="font-semibold text-sage-800 text-sm mb-1">2型糖尿病（T2D）</div>
+            <p class="text-sm text-slate-600 leading-relaxed">以胰岛素抵抗为主，伴有相对胰岛素分泌不足。占所有糖尿病病例的 <strong class="text-sage-800">90%–95%</strong>，与肥胖、久坐不动的生活方式和遗传因素密切相关。</p>
+          </div>
+          <div class="border-l-[3px] border-slate-300 pl-4">
+            <div class="font-semibold text-sage-800 text-sm mb-1">妊娠期糖尿病（GDM）</div>
+            <p class="text-sm text-slate-600">妊娠期间首次诊断的糖代谢异常，通常在妊娠 24–28 周筛查发现。</p>
+          </div>
+          <div class="border-l-[3px] border-slate-200 pl-4">
+            <div class="font-semibold text-sage-800 text-sm mb-1">其他特殊类型</div>
+            <p class="text-sm text-slate-600">单基因糖尿病（MODY）、囊性纤维化相关糖尿病（CFRD）、器官移植后糖尿病（PTDM）、胰腺疾病引起、药物诱导（糖皮质激素、免疫检查点抑制剂、PI3Kα 抑制剂等）。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-4">糖尿病前期诊断标准</h3>
+        <div class="overflow-x-auto -mx-2">
+          <table class="data-table min-w-[500px]">
+            <thead><tr><th>指标</th><th>正常</th><th>糖尿病前期</th><th>糖尿病</th></tr></thead>
+            <tbody>
+              <tr><td class="font-medium text-sage-800">空腹血糖</td><td>&lt;100 mg/dL<br><span class="text-xs text-slate-400">(&lt;5.6 mmol/L)</span></td><td class="text-coral-700 font-medium">100–125 mg/dL<br><span class="text-xs text-slate-400">(5.6–6.9)</span></td><td class="text-red-700 font-medium">≥126 mg/dL<br><span class="text-xs text-slate-400">(≥7.0)</span></td></tr>
+              <tr><td class="font-medium text-sage-800">OGTT 2h 血糖</td><td>&lt;140 mg/dL<br><span class="text-xs text-slate-400">(&lt;7.8)</span></td><td class="text-coral-700 font-medium">140–199 mg/dL<br><span class="text-xs text-slate-400">(7.8–11.0)</span></td><td class="text-red-700 font-medium">≥200 mg/dL<br><span class="text-xs text-slate-400">(≥11.1)</span></td></tr>
+              <tr><td class="font-medium text-sage-800">HbA1c</td><td>&lt;5.7%</td><td class="text-coral-700 font-medium">5.7%–6.4%</td><td class="text-red-700 font-medium">≥6.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 二 -->
+  <section class="mb-14 fade-up">
+    <div class="flex items-center gap-3 mb-6">
+      <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-coral-100 text-coral-700 font-serif font-bold text-lg">二</span>
+      <h2 class="font-serif text-xl sm:text-2xl font-bold text-sage-950">ADA 2026 核心更新</h2>
+    </div>
+
+    <div class="space-y-4">
+      <!-- Paradigm Shift -->
+      <div class="bg-gradient-to-br from-sage-700 to-sage-900 rounded-2xl p-5 sm:p-8 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-sage-500/15 rounded-full blur-3xl"></div>
+        <div class="relative">
+          <div class="text-sage-300 text-[11px] font-bold uppercase tracking-widest mb-3">2026 治疗优先级排序</div>
+          <h3 class="font-serif text-lg sm:text-xl font-bold mb-4">不再"HbA1c 优先"，而是"心肾优先"</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3.5">
+              <div class="text-coral-300 font-bold text-[11px] mb-0.5">第一优先</div>
+              <div class="text-sm text-sage-100 font-medium">心血管·肾脏风险</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3.5">
+              <div class="text-coral-300 font-bold text-[11px] mb-0.5">第二优先</div>
+              <div class="text-sm text-sage-100 font-medium">体重管理</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3.5">
+              <div class="text-coral-300 font-bold text-[11px] mb-0.5">第三优先</div>
+              <div class="text-sm text-sage-100 font-medium">血糖控制</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3.5">
+              <div class="text-coral-300 font-bold text-[11px] mb-0.5">新增焦点</div>
+              <div class="text-sm text-sage-100 font-medium">MASLD/MASH</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diagnostic Criteria -->
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-4">诊断标准</h3>
+        <p class="text-xs text-slate-400 mb-3">任一项满足即可诊断，无明确高血糖危象时需重复确认</p>
+        <div class="space-y-2.5 mb-4">
+          <div class="flex items-start gap-3 text-sm"><span class="mt-1.5 w-2 h-2 bg-sage-400 rounded-full flex-shrink-0"></span><span class="text-slate-600"><strong class="text-sage-800">空腹血糖（FPG）</strong> ≥126 mg/dL（7.0 mmol/L），空腹 ≥ 8 小时</span></div>
+          <div class="flex items-start gap-3 text-sm"><span class="mt-1.5 w-2 h-2 bg-sage-400 rounded-full flex-shrink-0"></span><span class="text-slate-600"><strong class="text-sage-800">OGTT 2 小时</strong> ≥200 mg/dL（11.1 mmol/L），75g 葡萄糖负荷</span></div>
+          <div class="flex items-start gap-3 text-sm"><span class="mt-1.5 w-2 h-2 bg-sage-400 rounded-full flex-shrink-0"></span><span class="text-slate-600"><strong class="text-sage-800">HbA1c</strong> ≥6.5%，需使用经 NGSP 认证的检测方法</span></div>
+          <div class="flex items-start gap-3 text-sm"><span class="mt-1.5 w-2 h-2 bg-sage-400 rounded-full flex-shrink-0"></span><span class="text-slate-600"><strong class="text-sage-800">随机血糖</strong> ≥200 mg/dL，伴典型症状（多饮、多尿、不明原因体重下降）</span></div>
+        </div>
+        <div class="bg-coral-50 rounded-xl p-4 border border-coral-100">
+          <div class="text-[11px] font-bold text-coral-700 uppercase tracking-wider mb-2">2026 新增</div>
+          <ul class="space-y-1.5 text-sm text-coral-800">
+            <li>• 即时检测（POC）HbA1c 用于筛查和诊断：仅限 FDA 批准的设备</li>
+            <li>• HbA1c 与血糖不一致时，考虑血红蛋白变异体、妊娠、G6PD 缺乏、HIV</li>
+            <li>• 药物诱导糖尿病筛查：使用 ICI、PI3Kα 抑制剂、mTOR 抑制剂的患者</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- T1D Screening -->
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-3">1型糖尿病筛查与早期干预</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-3">检测针对胰岛素（IA）、谷氨酸脱羧酶（GAD）、胰岛抗原2（IA-2）或锌转运蛋白8（ZnT8）的自身抗体。筛查对象为有 T1D 家族史或遗传风险升高者。</p>
+        <div class="bg-coral-50 rounded-xl p-4 border border-coral-100">
+          <div class="text-[11px] font-bold text-coral-700 uppercase tracking-wider mb-2">2026 新增</div>
+          <ul class="space-y-1.5 text-sm text-coral-800">
+            <li>• 单一 IA-2 抗体阳性者应按多抗体阳性方式监测（独立进展风险因素）</li>
+            <li>• 可考虑使用 CGM 数据监测症状前 T1D 的疾病进展</li>
+            <li>• 多抗体阳性者转诊考虑预防性治疗（如替普利珠单抗 teplizumab）</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HbA1c Targets -->
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-4">HbA1c 控制目标</h3>
+        <div class="overflow-x-auto -mx-2">
+          <table class="data-table min-w-[460px]">
+            <thead><tr><th>人群</th><th>HbA1c 目标</th><th>说明</th></tr></thead>
+            <tbody>
+              <tr><td class="font-medium text-sage-800">大多数非妊娠成人</td><td><span class="inline-flex px-2 py-0.5 rounded-md bg-sage-100 text-sage-700 font-bold text-xs">&lt;7.0%</span></td><td class="text-slate-500">可减少微血管并发症</td></tr>
+              <tr><td class="font-medium text-sage-800">年轻/低血糖风险低</td><td><span class="inline-flex px-2 py-0.5 rounded-md bg-sage-100 text-sage-700 font-bold text-xs">&lt;6.5%</span></td><td class="text-slate-500">不增加显著低血糖风险时</td></tr>
+              <tr><td class="font-medium text-sage-800">老年/多合并症</td><td><span class="inline-flex px-2 py-0.5 rounded-md bg-coral-100 text-coral-700 font-bold text-xs">&lt;8.0%</span></td><td class="text-slate-500">避免过度治疗和低血糖</td></tr>
+              <tr><td class="font-medium text-sage-800">妊娠期</td><td><span class="inline-flex px-2 py-0.5 rounded-md bg-sage-100 text-sage-700 font-bold text-xs">&lt;6.0–6.5%</span></td><td class="text-slate-500">个体化评估</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CGM -->
+      <div class="bg-white rounded-2xl border border-sage-100 p-5 sm:p-7">
+        <h3 class="font-serif text-lg font-semibold text-sage-900 mb-4">CGM 动态血糖监测指标</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+          <div class="rounded-xl border border-sage-200 p-3.5 text-center"><div class="text-[11px] text-slate-500 mb-0.5">目标范围 TIR</div><div class="text-[10px] text-slate-400">70–180 mg/dL</div><div class="font-serif text-xl font-bold text-sage-700 mt-1">&gt;70%</div></div>
+          <div class="rounded-xl border border-coral-200 p-3.5 text-center"><div class="text-[11px] text-slate-500 mb-0.5">低于目标 TBR</div><div class="text-[10px] text-slate-400">&lt;70 mg/dL</div><div class="font-serif text-xl font-bold text-coral-600 mt-1">&lt;4%</div></div>
+          <div class="rounded-xl border border-red-200 p-3.5 text-center"><div class="text-[11px] text-slate-500 mb-0.5">严重低血糖</div><div class="text-[10px] text-slate-400">&lt;54 mg/dL</div><div class="font-serif text-xl font-bold text-red-600 mt-1">&lt;1%</div></div>
+          <div class="rounded-xl border border-coral-200 p-3.5 text-center"><div class="text-[11px] text-slate-500 mb-0.5">高于目标 TAR</div><div class="text-[10px] text-slate-400">&gt;180 mg/dL</div><div class="font-serif text-xl font-bold text-coral-600 mt-1">&lt;25%</div></div>
+          <div class="rounded-xl border border-sage-200 p-3.5 text-center"><div class="text-[11px] text-slate-500 mb-0.5">变异系数 CV</div><div class="text-[10px] text-slate-400">稳定性指标</div><div class="font-serif text-xl font-bold text-sage-700 mt-1">≤36%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Nav -->
+  <div class="flex items-center justify-between border-t border-sage-100 pt-6 mt-8">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-sage-500 hover:text-sage-700 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      首页
+    </a>
+    <a href="prevention.html" class="inline-flex items-center gap-2 text-sm text-sage-600 font-medium hover:text-sage-800 transition-colors">
+      预防策略
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+</main>
+
+<footer class="bg-sage-950 text-sage-400 mt-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+      <a href="index.html" class="text-sm text-sage-400 hover:text-white transition-colors">首页</a><a href="overview.html" class="text-sm text-sage-300 hover:text-white transition-colors font-medium">概述与诊断</a><a href="prevention.html" class="text-sm text-sage-400 hover:text-white transition-colors">预防策略</a><a href="treatment.html" class="text-sm text-sage-400 hover:text-white transition-colors">综合管理</a><a href="heart-kidney.html" class="text-sm text-sage-400 hover:text-white transition-colors">心肾保护</a><a href="complications.html" class="text-sm text-sage-400 hover:text-white transition-colors">并发症管理</a>
+    </div>
+    <div class="border-t border-sage-800 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <div><div class="font-serif text-base font-semibold text-sage-200">ADA 2026 糖尿病诊疗指南科普</div><p class="text-xs text-sage-500 mt-1">基于 Diabetes Care 2026;49(Suppl 1) 编译 · 仅供科普教育</p></div>
+      <a href="#" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-sage-800/60 hover:bg-sage-800 text-sage-300 text-xs transition-colors"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>返回顶部</a>
+    </div>
+  </div>
+</footer>
+<script>
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
