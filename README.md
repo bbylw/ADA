@@ -50,6 +50,14 @@ python -m http.server 8000
 - **卡片悬停交互** — `card-hover` 微动效提升浏览体验
 - **2026 更新标记** — 指南新增/修订内容以 `2026 更新` 标签醒目标注
 
+## 科普视频
+
+- 📺 [ADA 2026 糖尿病诊疗指南 · 中文科普解读（B站）](https://www.bilibili.com/video/BV14sQgBqEg9/?share_source=copy_web&vd_source=e712953f066cd56c2ad96e8d1a7376a0)
+- 📺 [ADA 2026 Diabetes Guidelines Overview (YouTube)](https://www.youtube.com/watch?v=79S4a3VgKm0)
+
+[![ADA 2026 Diabetes Guidelines Overview](https://img.youtube.com/vi/79S4a3VgKm0/maxresdefault.jpg)](https://www.youtube.com/watch?v=79S4a3VgKm0)
+- 📺 [ADA 2026 Diabetes Standards of Care (YouTube)](https://www.youtube.com/watch?v=NQ09X7XJgcw)
+
 ## 内容来源
 
 - American Diabetes Association Professional Practice Committee for Diabetes. *Standards of Care in Diabetes—2026*. Diabetes Care. 2026;49(Suppl 1):S1–S320.
