@@ -54,6 +54,7 @@ python -m http.server 8000
 
 - 📺 [ADA 2026 糖尿病诊疗指南 · 中文科普解读（B站）](https://www.bilibili.com/video/BV14sQgBqEg9/?share_source=copy_web&vd_source=e712953f066cd56c2ad96e8d1a7376a0)
 - 📺 [ADA 2026 糖尿病诊疗指南 · 科普视频解读（YouTube）](https://www.youtube.com/watch?v=IfsqEXqUnUQ)
+- 📺 [ADA 2026 Diabetes Standards of Care (YouTube)](https://www.youtube.com/watch?v=NQ09X7XJgcw)
 
 [![ADA 2026 糖尿病诊疗指南 · 科普视频解读](https://img.youtube.com/vi/IfsqEXqUnUQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=IfsqEXqUnUQ)
 
